@@ -2,7 +2,7 @@ var hero = {
       name: ""
       heroic: true
       inventory =[]
-      health = 
+      health = 9
       weapon = {
         type: "dagger";
         damage = 2 
@@ -16,7 +16,7 @@ var hero = {
             object.health = 10
         }
         var imageForRest = function(hero){
-            const innUI = document.getElementById('inn') if null{} : 
+            const innUI = document.getElementById('inn') 
         }
         var clickhealth = function (hero){
             onclick(fullHealth(hero))
@@ -45,5 +45,8 @@ var hero = {
             const testWeapon = testHero.weapon
             equipWeapon(testHero)
         }
+    }
+    var displayStats = function (hero){
+        
     }
 

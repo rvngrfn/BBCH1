@@ -6,6 +6,24 @@ const { expect } = chai
 
 describe('Hero Object', function() {
   it('Declare a variable `hero` and assign it an object', function() {
+    var hero = {
+      name: ""
+      boolean: true
+      inventory =[]
+      health = 10
+      weapon = {
+        type: "sword" 
+        damage = 2 
+      }
+    }
+    
+
+
+
+
+
+
+
     expect(sinon.match.defined.test(hero)).to.equal(true)
     expect(hero, 'hero is not an object').to.be.an('object')
   })

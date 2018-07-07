@@ -3,22 +3,34 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="game.css">
+
+    
 </head>
 <body>
 
+    <h1>WE ARE HEROS 3:-) </h1>
 
-  <!-- YOUR HTML HERE -->
+    <p>get ready to _____</p>
+    <div class = "photo">
+      <div id="inn">
+        <h3>Check this out</h3>
+        <button onclick="resting()"><img src="inn.jpg"</button>
+      </div id="dagger">
 
+      <button onclick="pickUpItem()"><img src="dagger.jpg"</button>
 
-
-  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+      <div id ="bag">
+          <button onclick="equipWeapon()"><img src="pradabag.jpg"</button>
+        </div>
+      </div>
   <div id="mocha"></div>
 
   <script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
   <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sinon@3/pkg/sinon.js"></script>
   <script>mocha.setup('bdd')</script>
-  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="heromework.js"></script>
   <script src="game_logic.test.js"></script>
   <script>
     mocha.checkLeaks();
