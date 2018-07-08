@@ -1,52 +1,51 @@
 var hero = {
-      name: ""
-      heroic: true
-      inventory =[]
-      health = 9
-      weapon = {
-        type: "dagger";
-        damage = 2 
+      name: "",
+      heroic: new Boolean(true),
+      inventory: [],
+      health: 10,
+      weapon: {
+        type: "string",
+        damage: 2,
       }
     }
 
     
 
-    var resting = function (hero){
-        var fullHealth = function(hero){
-            object.health = 10
-        }
-        var imageForRest = function(hero){
-            const innUI = document.getElementById('inn') 
-        }
-        var clickhealth = function (hero){
-            onclick(fullHealth(hero))
-        }
-    }
+var rest = function (hero){
+    const inn = document.getElementById('inn')
+    hero.health = 10
+    return hero
     
-    var pickUpItem = function(hero, weapon){
-        var imageWeapon = function(weapon){
-            const innUI=document.getElementById('dagger')
-        }
-        var storeWeapon = function(weapon){
-            var inventoryLength = hero.inventory.length
-            document.getElementById('dagger').click()
+}
 
-        }
-        
+
+var pickUpItem = function(hero, weapon){
+    const weapon = document.getElementById('dagger')
+    var inventoryLength = hero.inventory.length
+    weapon >> hero.inventory
+    
+}
+
+var equipWeapon = function (hero){
+    const bag = document.getElementById('bag')
+    hero = {
+        weapon: {
+            type: "string",
+            damage: 2,
+          },
+        name: "",
+        heroic: new Boolean(true),
+        inventory: [],
+        health: 10,
+      }
+    
+
+
+}
+
+var displayStats = function (hero){
+    window.alert(hero)
+    var askForHeroName = function(hero){
+        window.prompt('what is your hero\'s name?')
     }
-
-    var equipWeapon = function (hero){
-        var whoEquips = function (hero){
-            const bagUI = document.getElementById('bag')
-
-        }
-        var emptyInventory = function (hero){
-            const testHero = { weapon: { type: 'sword', damage: 5 }, inventory: [] }
-            const testWeapon = testHero.weapon
-            equipWeapon(testHero)
-        }
-    }
-    var displayStats = function (hero){
-        
-    }
-
+}
