@@ -26,7 +26,7 @@ var pickUpItem = function(hero, weapon){
     
 }
 
-var equipWeapon = function (hero){
+var equipWeapon = function (hero, weapon){
     const bag = document.getElementById('bag')
     hero = {
         weapon: {
@@ -38,7 +38,7 @@ var equipWeapon = function (hero){
         inventory: [],
         health: 10,
       }
-    
+    hero.weapon = hero.inventory[0]
 
 
 }
